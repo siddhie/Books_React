@@ -32,7 +32,7 @@ function Provider({ children }) {
   }
 
   async function updateTitle(title, id) {
-    const response = await axios.put(`http://localhost:3001/books/${id}`, {
+   await axios.put(`http://localhost:3001/books/${id}`, {
       title: title,
     });
 
